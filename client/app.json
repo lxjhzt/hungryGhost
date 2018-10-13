@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/Home/Home",
+    "pages/Profile/Profile"
+  ],
+  "window":{
+    "backgroundColor":"#F6F6F6",
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#FDE669",
+    "navigationBarTitleText": "FoodEX",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#A7A9AB",
+    "selectedColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/Home/Home",
+        "text": "商 城",
+        "iconPath": "",
+        "selectedIconPath": ""
+      },
+      {
+        "pagePath": "pages/Profile/Profile",
+        "text": "购 物 车",
+        "iconPath": "",
+        "selectedIconPath": ""
+      }
+    ]
+  }
+}

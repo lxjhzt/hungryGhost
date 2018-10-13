@@ -1,0 +1,18 @@
+{
+	"client": "client/",
+	"svr": "server/",
+	"miniprogramRoot": "client/",
+	"qcloudRoot": "server/",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"nodeModules": false
+	},
+	"appid": "wxd4033fd10d3ce046",
+	"projectname": "FoodEX",
+	"libVersion": "2.3.0",
+	"condition": {}
+}
