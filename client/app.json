@@ -1,6 +1,7 @@
 {
   "pages":[
     "pages/Home/Home",
+    "pages/Cart/Cart",
     "pages/Profile/Profile"
   ],
   "window":{
@@ -16,13 +17,19 @@
     "list": [
       {
         "pagePath": "pages/Home/Home",
-        "text": "商 城",
+        "text": "Home",
+        "iconPath": "",
+        "selectedIconPath": ""
+      },
+      {
+        "pagePath": "pages/Cart/Cart",
+        "text": "Cart",
         "iconPath": "",
         "selectedIconPath": ""
       },
       {
         "pagePath": "pages/Profile/Profile",
-        "text": "购 物 车",
+        "text": "Profile",
         "iconPath": "",
         "selectedIconPath": ""
       }
