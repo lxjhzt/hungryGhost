@@ -1,0 +1,16 @@
+<!--pages/Feedback/Feedback.wxml-->
+<!--pages/sugg/sugg.wxml-->
+<view class="bg">
+  <view class="boldText">FoodEX</view>
+  <view class="normText">| The Best Sharing Food Delivery Platform</view>
+</view>
+
+
+<textarea class='comment-ipt' placeholder-class='comment-placeholder' placeholder='Please leave your feedback！~' auto-focus maxlength='255' bindinput='onInput'></textarea>
+
+<view class='preview-cnt' wx:if='{{commentImages.length}}'>
+    <image class='preview-image' wx:for='{{commentImages}}' wx:key='*this' src='{{item}}' mode='aspectFill' bindtap='previewImg' data-src='{{item}}'></image>
+</view>
+  <image class='opr-upload' src='/images/image.png' bindtap='chooseImage'></image>
+
+<view class="comment-btn {{!commentValue ? 'dis' : ''}}" bindtap="addSugg">Submit</view>

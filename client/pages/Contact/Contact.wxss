@@ -1,0 +1,51 @@
+/* pages/contact/contact.wxss */
+.bg {
+  display: flex;
+  align-items: center;
+  margin-top: 25rpx;
+  height: 128rpx;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.2);
+  box-shadow: 0 2rpx 13rpx 5rpx rgba(0, 0, 0, 0.02);
+  border-radius: 13rpx;
+  background: #ffffff;
+}
+
+.boldText {
+  font-weight: bold;
+  font-size: medium;
+  margin-left: 15rpx;
+}
+
+.normText {
+  font-size: small;
+  margin-left: 15rpx;
+  color: rgba(29, 29, 38, 0.8);
+}
+
+.bg-1 {
+  margin-top: 165rpx;
+  display: flex;
+  align-items: center;
+  height: 128rpx;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.2);
+  box-shadow: 0 2rpx 13rpx 5rpx rgba(0, 0, 0, 0.02);
+  border-radius: 13rpx;
+  background: #ffffff;
+}
+
+.bg-2 {
+  margin-top: 15rpx;
+  display: flex;
+  align-items: center;
+  height: 128rpx;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.2);
+  box-shadow: 0 2rpx 13rpx 5rpx rgba(0, 0, 0, 0.02);
+  border-radius: 13rpx;
+  background: #ffffff;
+}
+
+#map {
+  margin-top: 25rpx;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.2);
+  box-shadow: 0 2rpx 13rpx 5rpx rgba(0, 0, 0, 0.02);
+}

@@ -2,7 +2,9 @@
   "pages":[
     "pages/Home/Home",
     "pages/Cart/Cart",
-    "pages/Profile/Profile"
+    "pages/Profile/Profile",
+    "pages/Contact/Contact",
+    "pages/Feedback/Feedback"
   ],
   "window":{
     "backgroundColor":"#F6F6F6",
@@ -18,20 +20,20 @@
       {
         "pagePath": "pages/Home/Home",
         "text": "Home",
-        "iconPath": "",
-        "selectedIconPath": ""
+        "iconPath": "images/navigation/shop-unselected.png",
+        "selectedIconPath": "images/navigation/shop-selected.png"
       },
       {
         "pagePath": "pages/Cart/Cart",
         "text": "Cart",
-        "iconPath": "",
-        "selectedIconPath": ""
+        "iconPath": "images/navigation/cart-unselected.png",
+        "selectedIconPath": "images/navigation/cart-selected.png"
       },
       {
         "pagePath": "pages/Profile/Profile",
         "text": "Profile",
-        "iconPath": "",
-        "selectedIconPath": ""
+        "iconPath": "images/navigation/my-unselected.png",
+        "selectedIconPath": "images/navigation/my-selected.png"
       }
     ]
   }

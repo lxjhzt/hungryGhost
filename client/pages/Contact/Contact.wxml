@@ -1,0 +1,26 @@
+<!--pages/contact/contact.wxml-->
+<view class="container">
+  <view class="bg">
+    <view class="boldText">FoodEX</view>
+    <view class="normText">| The Best Sharing Food Delivery Platform</view>
+  </view>
+  <view class="bg-1">
+    <view class="normText">Please contact us if you have any questions. Our team will reply your email within 24 hours.</view>
+  </view>
+  <view class="bg-2">
+    <view class="boldText">Contact Us</view>
+    <view class="normText">hungryghost@gmail.com</view>
+  </view>
+  <view class="bg-2">
+    <view class="boldText">Business Cooperation</view>
+    <view class="normText">hungryghost@gmail.com</view>
+  </view>
+</view>
+
+<map id="map" longitude="-84.39473" latitude="33.776016" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 300px;"></map>
+
+<view class="bg-2">
+<view class="boldText">Address</view>
+  <view class="normText">Georgia Institute of Technology</view>
+</view>
+

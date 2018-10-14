@@ -3,12 +3,11 @@
   <view class="unlogin-card">
     <view class="unlogin-head"></view>
     <view class="unlogin-info">
-      <view class="unlogin-text">未登录</view>
-      <view class="unlogin-tips">点击微信登录后可方便购物</view>
+      <view class="unlogin-text">Unknown</view>
+      <view class="unlogin-tips">Order Food Delivery After Login</view>
     </view>
   </view>
-  <button wx:if="{{locationAuthType==0}}" class="unlogin-btn" open-type='getUserInfo' bindgetuserinfo='onTapLogin'>微信登录</button>
-  <button wx:if="{{locationAuthType==1}}" class="unlogin-btn" open-type='openSetting' bindopensetting="onTapLogin">授权登录</button>
+  <button wx:if="{{canIUse}}" class="unlogin-btn" open-type='getUserInfo' bindgetuserinfo='onTapLogin'>Login</button>
 </view>
 
 <view class="user-card" wx:else>
@@ -20,17 +19,17 @@
   <view class="user-options">
     <view class="option" bindtap="onTapOrder">
       <icon class="iconfont icon-sort"></icon>
-      <view class="option-title">我的订单</view>
+      <view class="option-title">My Order</view>
       <image class="option-arrow" src="/images/grey-arrow.png"></image>
     </view>
     <view class="option" bindtap="onTapAddress">
       <icon class="iconfont icon-location"></icon>
-      <view class="option-title">收货地址</view>
+      <view class="option-title">My Address</view>
       <image class="option-arrow" src="/images/grey-arrow.png"></image>
     </view>
     <view class="option" bindtap="onTapSugg">
       <icon class="iconfont icon-community"></icon>
-      <view class="option-title">意见反馈</view>
+      <view class="option-title">Feedback</view>
       <image class="option-arrow" src="/images/grey-arrow.png"></image>
     </view>
   </view>
@@ -38,7 +37,7 @@
   <view class="user-options">
     <view class="option" bindtap="onTapKf">
       <icon class="iconfont icon-service"></icon>
-      <view class="option-title">联系客服</view>
+      <view class="option-title">Contact Us</view>
       <image class="option-arrow" src="/images/grey-arrow.png"></image>
     </view>
   </view>

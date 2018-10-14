@@ -1,25 +1,36 @@
-// pages/Profile/Profile.js
-const app = getApp()
-
+// pages/contact/contact.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    userInfo: null,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    markers: [{
+      iconPath: "images/marker.png",
+      id: 0,
+      latitude: 33.776016,
+      longitude: -84.39473,
+      width: 50,
+      height: 50
+    }]
   },
 
-  onTapKf() {
-    wx.navigateTo({
-      url: `/pages/Contact/Contact`
-    })
-  },
-
-  onTapSugg() {
-    wx.navigateTo({
-      url: `/pages/Feedback/Feedback`
+  markertap(e) {
+    wx.showActionSheet({
+      itemList: ["FoodEX"],
+      success: function (res) {
+        console.log(res)
+        if (res.tapIndex == 0) {
+          wx.openLocation({
+            latitude: 33.776016,
+            longitude: -84.39473,
+            name: "Map",
+            scale: 28
+          })
+        }
+      },
+      fail: function (res) {
+      }
     })
   },
 
@@ -27,24 +38,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.getSetting({
-      success: function (res) {
-        if (res.authSetting['scope.userInfo'] == true) {
-          typeof e == 'function' && e('sucess')
-        } else {
-          typeof e == 'function' && e('fail')
-        }
-      },
-      fail: function (err) {
-        typeof e == 'function' && e('sucess')
-      }
-    })
-  },
 
-  onTapLogin: function (e) {
-    this.setData({
-      userInfo: e.detail.userInfo
-    })
   },
 
   /**
